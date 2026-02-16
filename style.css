@@ -489,3 +489,95 @@ div.nextmeeting_size{
 }
 }
 
+
+/* Homepage redesign improvements */
+.home-page {
+  background: #f8f9fc;
+  color: #1c2434;
+}
+
+.home-page .hero-section {
+  background: linear-gradient(135deg, #080451 0%, #15107d 60%, #2a1cb1 100%);
+}
+
+.home-page .section-headline {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: clamp(1.8rem, 1.25rem + 2vw, 2.9rem);
+  line-height: 1.2;
+}
+
+.home-page .headline-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.3rem;
+  border-radius: 999px;
+  background-color: #fff;
+}
+
+.home-page .section-divider {
+  border-top: 6px solid #74789b;
+  margin: 0;
+}
+
+.home-page .intro-copy,
+.home-page .container {
+  max-width: 1120px;
+}
+
+.home-page .container-1 {
+  font-size: clamp(1rem, 0.95rem + 0.35vw, 1.2rem);
+  line-height: 1.75;
+  color: #303a52 !important;
+}
+
+.home-page .next-meeting-panel {
+  background: linear-gradient(120deg, #080451 0%, #1f1498 100%);
+  border-radius: 14px;
+  box-shadow: 0 10px 35px rgba(10, 8, 65, 0.2);
+  width: min(100%, 700px);
+  height: auto;
+}
+
+.home-page .profile-picture {
+  width: clamp(120px, 22vw, 170px);
+  height: clamp(120px, 22vw, 170px);
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 24px rgba(11, 10, 98, 0.15);
+}
+
+.home-page .profile-name {
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.5rem);
+  margin-top: 0.8rem;
+}
+
+.home-page .profile-location-2 {
+  font-size: clamp(0.95rem, 0.9rem + 0.25vw, 1.1rem);
+  line-height: 1.35;
+  margin-bottom: 0.45rem;
+}
+
+.home-page .bg-white {
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 16px rgba(35, 47, 93, 0.08);
+}
+
+@media (max-width: 767px) {
+  .home-page .navbar .nav-link {
+    text-align: center;
+  }
+
+  .home-page .nextmeeting_size {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-page .d-flex.flex-column.justify-content-center.h-100.align-items-center.text-white {
+    height: auto !important;
+    min-height: 270px;
+  }
+}
